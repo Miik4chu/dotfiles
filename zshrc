@@ -19,7 +19,7 @@ e\\ [%cn\" --decorate --date=short"
 alias j="jobs"
 alias hs='history | grep --color=auto'
 alias h="history"
-alias update='apt-get update && apt-get upgrade && apt-get clean'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias c='clear'
 
 function mcd() {
