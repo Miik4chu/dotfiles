@@ -21,6 +21,7 @@ alias hs='history | grep --color=auto'
 alias h="history"
 alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
 alias c='clear'
+alias sshmichael="ssh miik4chu@buimichael.com -p 1990"
 
 function mcd() {
   mkdir -p "$1" && cd "$1";
