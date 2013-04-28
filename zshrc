@@ -19,7 +19,7 @@ e\\ [%cn\" --decorate --date=short"
 alias j="jobs"
 alias hs='history | grep --color=auto'
 alias h="history"
-alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get clean'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade && sudo apt-get clean'
 alias c='clear'
 alias sshmichael="ssh miik4chu@buimichael.com -p 1990"
 alias todo="sublime_text ~/Dropbox/TODO &"
@@ -56,4 +56,4 @@ plugins=(git extract)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/home/miik4chu/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games
+export PATH=/home/miik4chu/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$HOME/bin/PhpStorm-129.291/bin/:
