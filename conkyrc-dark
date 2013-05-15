@@ -11,7 +11,7 @@ own_window yes
 own_window_type conky
 own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
 own_window_title 
-own_window_colour FFFFFF
+own_window_colour 2D2D2D
 
 minimum_size 250
 
@@ -39,7 +39,7 @@ override_utf8_locale yes
 imlib_cache_size 0
 
 # Color scheme #
-default_color 666666
+default_color DCDCDC
 
 color1 0099CC
 color2 9933CC
@@ -47,7 +47,7 @@ color3 669900
 color4 FF8800
 color5 CC0000
 color6 AAAAAA
-color7 DDDDDD
+color7 484848
 
 TEXT
 ${execi 300 curl -s "http://weather.yahooapis.com/forecastrss?w=12727257&u=c" -o ~/.cache/weather.xml}${font Open Sans Light:size=15}${execi 300 grep "yweather:location" ~/.cache/weather.xml | grep -o "city=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*"}, ${execi 300 grep "yweather:location" ~/.cache/weather.xml | grep -o "country=\"[^\"]*\"" | grep -o "\"[^\"]*\"" | grep -o "[^\"]*"}${font}
