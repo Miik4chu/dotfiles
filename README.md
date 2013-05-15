@@ -3,9 +3,4 @@ dotfiles
 
 This repo contains my custom dotfiles and should be cloned in ~/dotfiles/.
 
-Install vim and run this :
-```shell
-curl http://j.mp/spf13-vim3 -L -o - | sh
-```
-
-Use setup.sh to install git/oh-my-zsh and symlink dotfiles.
+Run setup.sh and it will installs zsh and vim if not already installed then oh-my-zsh and vim-spf13 plugins.
