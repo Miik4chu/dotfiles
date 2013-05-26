@@ -58,3 +58,13 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/home/miik4chu/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$HOME/bin/PhpStorm-129.291/bin/:
+
+tunnel(){
+if [[ "$1" = "start" ]]; then
+	nohup ssh -i ~/.ssh/id_rsa -c blowfish -nNT -C -D 9999 root@lapetiteaffaire.fr > ~/foo.out 2> ~/foo.err < /dev/null &
+	echo "ssh started ..."
+	echo "Tunnel launched!"
+elif [[ "$1" = "stop" ]]; then
+	echo "Tunnel dead!"
+fi
+}
