@@ -35,7 +35,7 @@ function install_zsh {
 if [ -f /bin/zsh -o -f /usr/bin/zsh ]; then
     # Clone my oh-my-zsh repository from GitHub only if it isn't already present
     if [[ ! -d $dir/oh-my-zsh/ ]]; then
-        git clone http://github.com/michaeljsmalley/oh-my-zsh.git
+        git clone https://github.com/robbyrussell/oh-my-zsh.git
     fi
     # Set the default shell to zsh if it isn't currently set to zsh
     if [[ ! $(echo $SHELL) == $(which zsh) ]]; then
@@ -63,9 +63,8 @@ function install_vimspf {
 if [ -e "$HOME/.spf13-vim-3" ]; then
     echo ".spf13-vim-3 is already installed."
 else
-    sudo apt-get install vim
-    curl http://j.mp/spf13-vim3 -L -o - | sh
+    sudo apt-get install vim && curl http://j.mp/spf13-vim3 -L -o - | sh
 fi
 }
 
-install_vimspf
+#install_vimspf
