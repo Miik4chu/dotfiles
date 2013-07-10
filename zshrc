@@ -8,6 +8,7 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sorin"
 
 # Example aliases
+alias lsnew=" ls -al --time-style=+%D | grep `date +%D` "
 alias aptget="sudo apt-get"
 alias zconf="vi ~/.zshrc"
 alias gls="git log --pretty=format:\"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%c
