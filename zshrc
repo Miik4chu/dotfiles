@@ -27,6 +27,8 @@ alias sshmichael="ssh miik4chu@buimichael.com -p 1990"
 # local alias
 alias bees="~/bin/cloudbees-sdk-1.5.0/bees"
 alias screenfetch="~/bin/screenfetch/screenfetch-dev"
+alias r-a-d.io="mplayer http://r-a-d.io/main.mp3"
+alias eden="mplayer http://edenofthewest.com:8080/eden.mp3"
 
 function mcd() {
   mkdir -p "$1" && cd "$1";
@@ -68,4 +70,15 @@ if [[ "$1" = "start" ]]; then
 elif [[ "$1" = "stop" ]]; then
 	echo "Tunnel dead!"
 fi
+}
+
+man() {
+  env LESS_TERMCAP_mb=$'\E[01;31m' \
+    LESS_TERMCAP_md=$'\E[01;38;5;74m' \
+    LESS_TERMCAP_me=$'\E[0m' \
+    LESS_TERMCAP_se=$'\E[0m' \
+    LESS_TERMCAP_so=$'\E[38;5;246m' \
+    LESS_TERMCAP_ue=$'\E[0m' \
+    LESS_TERMCAP_us=$'\E[04;38;5;146m' \
+    man "$@"
 }
