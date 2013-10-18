@@ -27,8 +27,8 @@ alias sshmichael="ssh miik4chu@buimichael.com -p 1990"
 # local alias
 alias bees="~/bin/cloudbees-sdk-1.5.0/bees"
 alias screenfetch="~/bin/screenfetch/screenfetch-dev"
-alias r-a-d.io="mplayer http://r-a-d.io/main.mp3"
-alias eden="mplayer http://edenofthewest.com:8080/eden.mp3"
+alias radio="mplayer http://r-a-d.io/main.mp3 -cache 500"
+alias eden="mplayer http://edenofthewest.com:8080/eden.mp3 -cache 500"
 
 function mcd() {
   mkdir -p "$1" && cd "$1";
