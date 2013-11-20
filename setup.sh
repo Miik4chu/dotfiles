@@ -8,7 +8,7 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files="vimrc zshrc oh-my-zsh vimrc.local conkyrc weathericons"    # list of files/folders to symlink in homedir
+files="zshrc oh-my-zsh tmux.conf"    # list of files/folders to symlink in homedir
 
 ##########
 
@@ -57,14 +57,3 @@ fi
 }
 
 install_zsh
-
-function install_vimspf {
-    #test if files of spf13 are already in the home
-if [ -e "$HOME/.spf13-vim-3" ]; then
-    echo ".spf13-vim-3 is already installed."
-else
-    sudo apt-get install vim && curl http://j.mp/spf13-vim3 -L -o - | sh
-fi
-}
-
-#install_vimspf
