@@ -60,7 +60,7 @@ plugins=(git extract tmux colored-man)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=/home/miik4chu/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$HOME/bin/PhpStorm-129.291/bin/:
+export PATH=$PATH:/home/miik4chu/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:$HOME/bin/PhpStorm-129.291/bin/:$HOME/.rvm/bin:
 
 tunnel(){
 if [[ "$1" = "start" ]]; then
